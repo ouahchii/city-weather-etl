@@ -1,2 +1,7 @@
 # city-weather-etl
-Mini ETL pipeline — learning project
+
+Learning project — Git + VS Code + PySpark + dbt.
+
+## Status
+
+Work in progress.
