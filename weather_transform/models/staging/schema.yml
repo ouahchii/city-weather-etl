@@ -1,0 +1,21 @@
+version: 2
+
+models:
+  - name: stg_weather
+    description: 'Cleaned and staged weather data for 5 cities'
+    columns:
+      - name: city
+        description: 'City name'
+        tests:
+          - not_null
+          - unique
+      - name: temp_c
+        description: 'Temperature in Celsius'
+        tests:
+          - not_null
+      - name: comfort_level
+        description: 'Derived comfort level based on temp and humidity'
+        tests:
+          - not_null
+          - accepted_values:
+              values: ['comfortable', 'cold', 'humid', 'moderate']
