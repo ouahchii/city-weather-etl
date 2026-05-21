@@ -19,3 +19,10 @@ data/processed/
 # Windows
 Thumbs.db
 desktop.ini
+
+# dbt generated folders - don't let Git track these
+weather_transform/logs/
+weather_transform/analyses/
+weather_transform/macros/
+weather_transform/target/
+weather_transform/dbt_packages/
